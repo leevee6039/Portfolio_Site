@@ -247,6 +247,10 @@ button:hover, button:focus, input[type=submit]:hover, input[type=submit]:focus, 
   margin: 0 auto;
 }
 
+.about-main-section__content {
+  text-align: justify;
+}
+
 @keyframes color-change {
   0% {
     fill: var(--sun-light-color);
