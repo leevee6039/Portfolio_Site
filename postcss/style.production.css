@@ -6,13 +6,6 @@
 */
 
 /*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.3.6,
-* Autoprefixer: v10.3.1
-* Browsers: last 2 version
-*/
-
-/*
 Colors used
 
 Text Color (Dark Gray): #2b2b2b;
@@ -20,12 +13,12 @@ Dark Primary Color (Purple while background gray): #00675c;
 Primary Color (Purple): #357b70;
 Secondary Color (Orange): #e0b354;
 
-*/
+ */
 
-* {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
+ * {
+   -webkit-box-sizing: border-box;
+           box-sizing: border-box;
+ }
 
 body {
   font-family: 'Poppins', 'Lato', sans-serif;
@@ -102,19 +95,19 @@ button:hover, button:focus, input[type=submit]:hover, input[type=submit]:focus, 
   top: 0;
   background-color: #fff;
   -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .page-header__item {
   -webkit-box-flex: 0;
-  -ms-flex: 0 1 200px;
-  flex: 0 1 200px;
+      -ms-flex: 0 1 200px;
+          flex: 0 1 200px;
 }
 
 .page-header__item:last-child {
   -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   text-align: right;
 }
 
@@ -145,13 +138,13 @@ button:hover, button:focus, input[type=submit]:hover, input[type=submit]:focus, 
 
 .navigation-list li a {
   color: #00675c;
-  text-decoration: none;
-  /*     font: 20px Raleway; */
-  /*     margin: 0px 10px; */
-  padding: 10px 10px;
-  position: relative;
-  /*     z-index: 0; */
-  cursor: pointer;
+    text-decoration: none;
+/*     font: 20px Raleway; */
+/*     margin: 0px 10px; */
+    padding: 10px 10px;
+    position: relative;
+/*     z-index: 0; */
+    cursor: pointer;
 }
 
 .navigation-list li a:before {
@@ -224,8 +217,8 @@ button:hover, button:focus, input[type=submit]:hover, input[type=submit]:focus, 
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   /* align-items: center; */
   text-align: center;
 }
@@ -242,9 +235,9 @@ button:hover, button:focus, input[type=submit]:hover, input[type=submit]:focus, 
 
 /* start grid fallback */
 .grid__item {
-  display: inline-block;
-  width: 33%;
-  border-radius: 5px;
+ display: inline-block;
+ width: 33%;
+ border-radius: 5px;
 }
 /* end grid fallback */
 
@@ -323,122 +316,122 @@ button:hover, button:focus, input[type=submit]:hover, input[type=submit]:focus, 
 
 .sun {
   -webkit-animation: 5s color-change infinite alternate linear;
-  animation: 5s color-change infinite alternate linear;
+          animation: 5s color-change infinite alternate linear;
 }
 
 @-webkit-keyframes cloud-move {
   from {
     -webkit-transform: translate(0, 50px);
-    transform: translate(0, 50px);
+            transform: translate(0, 50px);
   }
   to {
     -webkit-transform: translate(500px, 50px);
-    transform: translate(500px, 50px);
+            transform: translate(500px, 50px);
   }
 }
 
 @keyframes cloud-move {
   from {
     -webkit-transform: translate(0, 50px);
-    transform: translate(0, 50px);
+            transform: translate(0, 50px);
   }
   to {
     -webkit-transform: translate(500px, 50px);
-    transform: translate(500px, 50px);
+            transform: translate(500px, 50px);
   }
 }
 
 .cloud-front {
   -webkit-animation: 10s cloud-move infinite alternate linear;
-  animation: 10s cloud-move infinite alternate linear;
+          animation: 10s cloud-move infinite alternate linear;
 }
 
 @-webkit-keyframes cloud-move-reverse {
   from {
     -webkit-transform: translate(446px, 48px);
-    transform: translate(446px, 48px);
+            transform: translate(446px, 48px);
   }
   to {
     -webkit-transform: translate(0, 48px);
-    transform: translate(0, 48px);
+            transform: translate(0, 48px);
   }
 }
 
 @keyframes cloud-move-reverse {
   from {
     -webkit-transform: translate(446px, 48px);
-    transform: translate(446px, 48px);
+            transform: translate(446px, 48px);
   }
   to {
     -webkit-transform: translate(0, 48px);
-    transform: translate(0, 48px);
+            transform: translate(0, 48px);
   }
 }
 
 .cloud-back {
   -webkit-animation: 10s cloud-move-reverse infinite alternate linear;
-  animation: 10s cloud-move-reverse infinite alternate linear;
+          animation: 10s cloud-move-reverse infinite alternate linear;
 }
 
 @-webkit-keyframes big-statue {
   from {
     -webkit-transform: scale(0.8, 0.8);
-    transform: scale(0.8, 0.8);
+            transform: scale(0.8, 0.8);
   }
   to {
     -webkit-transform: scale(1, 1);
-    transform: scale(1, 1);
+            transform: scale(1, 1);
   }
 }
 
 @keyframes big-statue {
   from {
     -webkit-transform: scale(0.8, 0.8);
-    transform: scale(0.8, 0.8);
+            transform: scale(0.8, 0.8);
   }
   to {
     -webkit-transform: scale(1, 1);
-    transform: scale(1, 1);
+            transform: scale(1, 1);
   }
 }
 
 .statue-of-liberty {
   -webkit-animation: 4s big-statue ease;
-  animation: 4s big-statue ease;
+          animation: 4s big-statue ease;
 }
 
 @-webkit-keyframes car-move {
   from {
     -webkit-transform: translate(-3000, 0);
-    transform: translate(-3000, 0);
+            transform: translate(-3000, 0);
   }
   to {
     -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
+            transform: translate(0, 0);
   }
 }
 
 @keyframes car-move {
   from {
     -webkit-transform: translate(-3000, 0);
-    transform: translate(-3000, 0);
+            transform: translate(-3000, 0);
   }
   to {
     -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
+            transform: translate(0, 0);
   }
 }
 
 .car {
   -webkit-animation: 5s car-move 1s linear infinite;
-  animation: 5s car-move 1s linear infinite;
+          animation: 5s car-move 1s linear infinite;
 }
 
 /* Contact page */
 
 .contact-main-section__container {
-  max-width: 720px;
-  margin: 0 auto;
+    max-width: 720px;
+    margin: 0 auto;
 }
 
 .contact-main-section__header {
@@ -450,11 +443,11 @@ button:hover, button:focus, input[type=submit]:hover, input[type=submit]:focus, 
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .contact-main-section__container-form {
@@ -472,10 +465,32 @@ button:hover, button:focus, input[type=submit]:hover, input[type=submit]:focus, 
   padding: 10px;
   width: auto;
   min-height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .form__input {
   line-height: normal;
+}
+
+.contact-me__item {
+  margin: 0 2%;
+}
+
+.contact-icon__svg {
+  height: 30px;
+  width: 30px;
 }
 
 /* media queries */
@@ -510,8 +525,8 @@ button:hover, button:focus, input[type=submit]:hover, input[type=submit]:focus, 
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     margin-bottom: 10px;
   }
   .navigation-list li a {
@@ -520,7 +535,7 @@ button:hover, button:focus, input[type=submit]:hover, input[type=submit]:focus, 
   .contact-main-section__content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }

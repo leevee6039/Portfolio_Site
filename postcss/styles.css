@@ -351,10 +351,23 @@ button:hover, button:focus, input[type=submit]:hover, input[type=submit]:focus, 
   padding: 10px;
   width: auto;
   min-height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .form__input {
   line-height: normal;
+}
+
+.contact-me__item {
+  margin: 0 2%;
+}
+
+.contact-icon__svg {
+  height: 30px;
+  width: 30px;
 }
 
 /* media queries */
