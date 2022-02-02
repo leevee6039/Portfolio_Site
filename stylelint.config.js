@@ -2,7 +2,10 @@
 
 module.exports = {
   "rules": {
-    "at-rule-no-unknown": true,
+    "at-rule-no-unknown": [true, {
+      "ignoreAtRules": ["function", "if", "each", "include", "mixin", "extend"]
+    }],
+    // "scss/at-rule-no-unknown": true,
     "block-no-empty": true,
     "color-no-invalid-hex": true,
     "comment-no-empty": true,
