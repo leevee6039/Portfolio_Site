@@ -259,6 +259,7 @@ input[type=submit]:focus,
     padding: 10px;
     width: auto;
     min-height: auto;
+    margin: 0;
   }
 
   .grid__item:last-child {
@@ -441,10 +442,6 @@ input[type=submit]:focus,
 @media all and (max-width: 750px) {
   .grid {
     grid-gap: 10px;
-  }
-
-  .grid__item {
-    margin: 0;
   }
 
   .grid__item:last-child {
