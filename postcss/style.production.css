@@ -243,7 +243,9 @@ input[type=submit]:focus,
 /* Work Page */
 
 .work-main-section {
+  max-width: 100%;
   text-align: center;
+  padding: 0;
 }
 
 .grid__item-content {
@@ -301,6 +303,10 @@ input[type=submit]:focus,
 
 .about-main-section {
   text-align: center;
+}
+
+.about-main-section-list {
+  padding: 0;
 }
 
 .about-main-section__table {
@@ -533,6 +539,20 @@ input[type=submit]:focus,
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
+
+  .standard-label {
+    float: left;
+  }
+
+  .profile {
+    padding: 15px;
+    text-align: center;
+  }
+
+  .profile__portrait {
+    float: none;
+    margin-right: 0;
+  }
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
@@ -545,6 +565,10 @@ input[type=submit]:focus,
 @media all and (max-width: 750px) {
   .grid {
     grid-gap: 10px;
+  }
+
+  .grid__item {
+    margin: 0;
   }
 
   .grid__item:last-child {
@@ -579,7 +603,16 @@ input[type=submit]:focus,
 }
 
 @media all and (max-width: 370px) {
-  .standard-label {
-    float: left;
+  .page-header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .page-header__item {
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none;
   }
 }

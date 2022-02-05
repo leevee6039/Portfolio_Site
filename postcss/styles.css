@@ -219,7 +219,9 @@ input[type=submit]:focus,
 /* Work Page */
 
 .work-main-section {
+  max-width: 100%;
   text-align: center;
+  padding: 0;
 }
 
 .grid__item-content {
@@ -269,6 +271,10 @@ input[type=submit]:focus,
 
 .about-main-section {
   text-align: center;
+}
+
+.about-main-section-list {
+  padding: 0;
 }
 
 .about-main-section__table {
@@ -410,6 +416,20 @@ input[type=submit]:focus,
   .grid {
     grid-template-columns: 1fr;
   }
+
+  .standard-label {
+    float: left;
+  }
+
+  .profile {
+    padding: 15px;
+    text-align: center;
+  }
+
+  .profile__portrait {
+    float: none;
+    margin-right: 0;
+  }
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
@@ -421,6 +441,10 @@ input[type=submit]:focus,
 @media all and (max-width: 750px) {
   .grid {
     grid-gap: 10px;
+  }
+
+  .grid__item {
+    margin: 0;
   }
 
   .grid__item:last-child {
@@ -448,7 +472,11 @@ input[type=submit]:focus,
 }
 
 @media all and (max-width: 370px) {
-  .standard-label {
-    float: left;
+  .page-header {
+    flex-direction: column;
+  }
+
+  .page-header__item {
+    flex: none;
   }
 }
