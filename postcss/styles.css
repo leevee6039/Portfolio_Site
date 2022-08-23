@@ -411,6 +411,12 @@ input[type=submit]:focus,
   width: 30px;
 }
 
+.twitter-and-medium {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
 /* media queries */
 
 @media all and (max-width: 500px) {
