@@ -65,7 +65,7 @@ a:active {
 }
 
 button,
-input[type=submit],
+input[type='submit'],
 .button {
   border: none;
   display: inline-block;
@@ -84,8 +84,8 @@ input[type=submit],
 
 button:hover,
 button:focus,
-input[type=submit]:hover,
-input[type=submit]:focus,
+input[type='submit']:hover,
+input[type='submit']:focus,
 .button:hover,
 .button:focus {
   cursor: pointer;
@@ -127,7 +127,7 @@ input[type=submit]:focus,
   color: #fff;
 }
 
-.about-main-section__download>a {
+.about-main-section__download > a {
   background-color: #357b70;
   color: #fff;
 }
@@ -208,7 +208,7 @@ input[type=submit]:focus,
 }
 
 .navigation-list__item--active,
-.social-media>a {
+.social-media > a {
   text-decoration: none;
 }
 
@@ -222,7 +222,8 @@ input[type=submit]:focus,
 
 .profile,
 .about-main-section,
-.work-main-section {
+.work-main-section,
+.case-study-main-section {
   /* min-width: 360px; */
   max-width: 720px;
   margin: 0 auto;
@@ -268,11 +269,11 @@ input[type=submit]:focus,
 
 /* end grid fallback */
 
-.grid__item>a {
+.grid__item > a {
   color: #00675c;
 }
 
-.contact-me__item>a {
+.contact-me__item > a {
   color: #00675c;
 }
 
@@ -550,6 +551,36 @@ input[type=submit]:focus,
   justify-content: space-evenly;
 }
 
+/* case studies */
+.case-study-main-section__hero-img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 100%;
+  max-width: 720px;
+  height: auto;
+}
+
+.case-study-main-section__content {
+  text-align: justify;
+}
+
+.case-study-main-section__server-side-code {
+  border-radius: 8%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  float: right;
+  margin: 15px;
+}
+
+.case-study-main-section__client-side-code {
+  border-radius: 8%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  float: left;
+  margin: 15px;
+}
+
+.case-study-main-section__button:visited {
+  color: #fff;
+}
+
 /* media queries */
 
 @media all and (max-width: 500px) {
@@ -570,6 +601,11 @@ input[type=submit]:focus,
   .profile__portrait {
     float: none;
     margin-right: 0;
+  }
+
+  .case-study-main-section__server-side-code,
+  .case-study-main-section__client-side-code {
+    float: none;
   }
 }
 
